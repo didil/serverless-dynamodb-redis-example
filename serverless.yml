@@ -55,6 +55,7 @@ provider:
         - lambda:InvokeAsync
       Resource:
         - { "Fn::Join" : ["", ["arn:aws:lambda:${self:provider.region}:", { "Ref" : "AWS::AccountId" }, ":function:${self:custom.functionsPrefix}-cacheNote" ] ]  }
+      # the name is set explicitly to avoid a Could Formation circular dependency error
 
 functions:
   createNote:
