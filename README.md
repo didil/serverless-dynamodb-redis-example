@@ -1,4 +1,4 @@
-# Serverless Lambda DynamoDB Example
+# Serverless DynamoDB Redis Example
 Serverless example illustrating Dynamodb usage / async lambda invocation / redis cache usage for the following flows:
 
 - Lambda (createNote) => DynamoDB 
